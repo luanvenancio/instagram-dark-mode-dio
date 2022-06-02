@@ -1,10 +1,11 @@
-# Oi, tudo bem? Chegou aqui através do curso, certo? 🙃
+# Página de Login Instagram
 
-Esse é o repositório da nossa aula de Flexbox, na qual vamos fazer a interface de login do Instagram! 
+Esse desafio de código tem como objetico criar uma interface de login do Instagram usando Flexbox.
 
-### Os requisitos são:
+## Objetivos
 
-* [HTML básico](https://www.w3schools.com/html/)
-* [CSS básico](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
-
-## 🚀 Let's code! 🚀
+### Principais
+- [x] Criar uma interface de login do Instagram usando Flexbox.
+### Adicionais
+- [x] Criar modo escuro;
+- [x] Alternar entre modo escuro e modo claro;
