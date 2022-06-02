@@ -7,10 +7,25 @@
     font-size: 14px;
 }
 
+:root {
+    --body-bg:#f3f3f3;
+    --group-bg: #ffffff;
+    --border:#d3d3d3;  
+    --text-secundary: #1E1F25;
+}
+
+
+.darkmode {
+    --body-bg: #17181C;
+    --group-bg: #1E1F25;
+    --border: #252831;
+    --text-secundary:#a0a0a0;
+}
+
 body {
     width: 100%;
     min-height: 100vh;
-    background-color: rgb(243, 243, 243);
+    background-color: var(--body-bg);
     margin: 0;
     padding: 0;
     display: flex;
@@ -21,7 +36,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: start;
-    width: 60%;
+    width: 100%;
+    max-width: 58.438rem;
     height: 100vh;
 }
 
@@ -41,7 +57,7 @@ body {
     align-items: center; /* horizontal */
     justify-content: space-around; /* vertical */
     flex-direction: column;
-    width: 50%;
+    width: 60%;
     min-height: 34rem;
 }
 
@@ -50,10 +66,12 @@ body {
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    background-color: #ffffff;
+    background-color: var(--group-bg);
+    max-width: 21.875rem;
     width: 100%;
     padding: 1.3rem 0;
-    border: 1px solid lightgray;
+    margin-bottom: 0.625rem;
+    border: 1px solid var(--border);
 }
 
 .group:nth-child(1) {
@@ -62,6 +80,7 @@ body {
 
 .instagram-logo {
     height: 3rem;
+    margin-top: 0.675rem;
 }
 
 .profile-photo {
@@ -70,6 +89,7 @@ body {
     align-items: center;
     border-radius: 50%;
     overflow: hidden;
+    margin: 1.5rem 0rem;
 }
 
 .profile-photo img {
@@ -103,6 +123,7 @@ body {
     justify-content: center;
     width: 100%;
     padding: 1.3rem 0;
+    color:var(--text-secundary);
 }
 
 .download {
@@ -115,7 +136,7 @@ body {
 
 .app-download {
     height: 3rem;
-    width: 10rem;
+    width: 10.15rem;
     background-size: cover;
 }
 
@@ -127,8 +148,36 @@ body {
     background-image: url('./img/googleplay-button.png');
 }
 
-/* media queries */
+.dark-mode-toggle {
+    position: absolute;
+    z-index: 100;
+    top: 1em;
+    right: 1em;
+    color: var(--text-secundary);
+    border: 0;
+    padding: 4px;
+    background: transparent;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+}
 
+/* media queries */
+@media (prefers-color-scheme:dark) {
+    :root{
+        --body-bg: #17181C;
+        --group-bg: #1E1F25;
+        --border: #252831;
+    }
+}
+
+@media (prefers-color-scheme:light){
+    :root {
+        --body-bg:#f3f3f3;
+        --group-bg: #ffffff;
+        --border:#d3d3d3;
+    }
+}
 
 @media (max-width: 1024px) {
     .instagram-wrapper {

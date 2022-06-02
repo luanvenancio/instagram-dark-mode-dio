@@ -1,31 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Instagram</title>
+    <link rel="icon" type="image/x-icon" href="/img/icon.png">
+
 </head>
+
 <body>
+    <button id="dark-mode-toggle" class="dark-mode-toggle">
+        <svg width="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 496">
+            <path fill="currentColor"
+                d="M8,256C8,393,119,504,256,504S504,393,504,256,393,8,256,8,8,119,8,256ZM256,440V72a184,184,0,0,1,0,368Z"
+                transform="translate(-8 -8)" />
+        </svg>
+    </button>
+
     <div class="instagram-wrapper">
         <div class="instagram-phone">
-            <img src="./img/instagram-celular.png" alt="celular">
+            <img src="./img/instagram-celular.png" id="celular-img" alt="celular">
         </div>
         <div class="instagram-continue">
             <div class="group">
-                <img src="./img/instagram-logo.png" class="instagram-logo" alt="instagram logo">
+                <img src="./img/instagram-logo.png" id="logo" class="instagram-logo" alt="instagram logo">
                 <div class="profile-photo">
-                    <img src="./img/perfil-instagram.jpg" alt="foto de perfil">
+                    <img src="https://avatars.githubusercontent.com/u/9398249?s=400&v=4" alt="foto de perfil">
                 </div>
-                <a href="#" class="instagram-login">Continue como sprucegabriela</a>
+                <a href="#" class="instagram-login">Continue como luandvenancio</a>
                 <a href="#" class="instagram-logout">Remover conta</a>
             </div>
             <div class="group">
-                <p class="not-account">Não é sprucegabriela?</p>
+                <p class="not-account">Não é luandvenancio?</p>
                 <p class="not-account">
-                    <span class="link-blue">Alternar contas</span>
+                    <a href="#" class="link-blue">Alternar contas</a>
                     ou
-                    <span class="link-blue">Inscreva-se</span>
+                    <a href="#" class="link-blue">Inscreva-se</a>
                 </p>
             </div>
             <div class="get-the-app">
@@ -37,5 +49,7 @@
             </div>
         </div>
     </div>
+    <script src="./index.js"></script>
 </body>
+
 </html>
